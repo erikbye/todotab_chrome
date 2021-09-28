@@ -1,0 +1,30 @@
+{
+	"manifest_version": 2,
+	"name": "Todotab",
+	"short_name": "todotab",
+	"version": "1.0",
+	"description": "a minimal new tab with todos",
+    "background": {
+		"scripts": ["js/newtab.js"
+		]
+	},
+
+    "icons": {
+        "16": "icon-16.png",
+        "32": "icon-32.png",
+        "128": "icon-128.png"
+    },
+
+	"chrome_url_overrides": {
+		"newtab": "newtab.html"
+	},
+	"browser_action": {
+        "default_title": "Todos",
+        "default_icon": {
+            "16": "icon-16.png",
+            "32": "icon-32.png"
+        }
+
+	},
+	"permissions": ["storage", "unlimitedStorage"]
+}

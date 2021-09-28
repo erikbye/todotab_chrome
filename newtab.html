@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/help.css">
+    <link rel="stylesheet" href="css/image-caption.css">
+
+    <link rel="stylesheet" href="vendor/font-awesome.css" >
+
+    <title>Todos s</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+
+            <div id="datetimeContainer">
+                <h1 id="datetime"></h1>
+                <h1 id="dateyear"></h1>
+                <h1 id="weeknumber"></h1>
+            </div>
+
+            <div id="image_caption" class="imageCaption-popup">
+                <span style="color: whitesmoke;"><i class="fa fa-align-left" id="imageCaption-icon"></i></span>
+                <span class="imageCaption-popuptext" id="image-popup"></span>
+            </div>
+
+        </div>
+
+        <div class="bottom">
+            <div>
+            </div>
+
+            <div>
+                <div id="help_popup" class="help-popup">
+                    <span style="color: whitesmoke;"><i class="fa fa-info-circle" id="help-icon"></i></span>
+                    <span class="help-popuptext" id="popup">left click completes<br /> right click to delete<br /> hold ctrl to select a fleet</span>
+                </div>
+
+                <div>
+                    <span id="darkModeToggle">
+                        <!-- <i class="fa fa-sun-o"></i> -->
+                    </span>
+                </div>
+
+                <div id="todoCol">
+                    <ul id="todo-list" contextmenu="delete">
+                        <menu type="context" id="delete">
+                            <menuitem label="Delete todo"></menuitem>
+                        </menu>
+                    </ul>
+                </div>
+
+                <div id="footerRightCol">
+                    <input type="text" placeholder="new todo" id="add_todo">
+                </div>
+        </div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/newtab.js"></script>
+</body>
+</html>
